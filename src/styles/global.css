@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customizações de filtros ou variáveis globais para Acessibilidade podem ser injetadas aqui futuramente */
