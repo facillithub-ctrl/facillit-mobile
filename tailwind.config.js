@@ -1,19 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+  // Aponta para todos os arquivos onde usamos classes do Tailwind
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./App.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
         brand: {
-          green: '#07f49e', // Verde da Marca 
-          purple: '#42047e', // Roxo da Marca 
+          green: '#07f49e',
+          purple: '#42047e',
           DEFAULT: '#42047e',
         },
-        // Estética "Clean White" 
-        background: '#ffffff',
-        surface: '#f8f9fa', // Um off-white muito sutil para contraste se necessário
-        error: '#ef4444',
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          500: '#6b7280',
+          900: '#111827',
+        }
       },
       fontFamily: {
         inter: ['Inter_400Regular'],

@@ -1,8 +1,6 @@
-import { registerRootComponent } from 'expo';
+// Imports obrigatórios para evitar falhas com Reanimated e Gestos
+import 'react-native-gesture-handler';
+import 'react-native-reanimated';
 
-import App from './App';
-
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
-registerRootComponent(App);
+// Importação do ponto de entrada do Expo Router
+import "expo-router/entry";
